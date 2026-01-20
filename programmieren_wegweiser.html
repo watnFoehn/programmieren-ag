@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Wegweiser zum selbstständigen Programmieren lernen – spielerisch, kreativ und ohne Druck">
+  <title>Programmieren lernen – Dein Wegweiser</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background: #f6f8fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #1e40af, #16a34a);
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: clamp(0.9rem, 2.5vw, 1rem);
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: clamp(1.25rem, 4vw, 1.5rem);
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+    .tag {
+      display: inline-block;
+      background: #e5e7eb;
+      color: #374151;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .tag.beginner { background: #d1fae5; color: #065f46; }
+    .tag.intermediate { background: #dbeafe; color: #1e40af; }
+    .tag.advanced { background: #fce7f3; color: #9f1239; }
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:focus {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 640px) {
+      main { padding: 1.5rem 1rem 2rem; }
+      section { margin-bottom: 2rem; }
+      .card { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span role="img" aria-label="Rakete">🚀</span> Programmieren lernen – Deine nächsten Schritte</h1>
+  <p>Dein Wegweiser, um nach ersten Erfahrungen selbstständig weiterzumachen – spielerisch, kreativ und ohne Druck.</p>
+</header>
+
+<main>
+
+  <section>
+    <h2><span role="img" aria-label="Gehirn">🧠</span> Was ist Programmieren?</h2>
+    <div class="card">
+      <p>Programmieren bedeutet, einem Computer ganz genau zu sagen, <strong>was er tun soll – Schritt für Schritt</strong>. Spiele, Apps und Webseiten bestehen aus Ideen, Regeln, Grafiken und Code.</p>
+      <p>Du lernst Programmieren nicht durch Auswendiglernen, sondern durch <strong>Ausprobieren, Fehler machen und Verbessern</strong>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span role="img" aria-label="Werkzeugkasten">🧰</span> Werkzeuge & Plattformen</h2>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag beginner">Ab 8 Jahren</span>
+        <h3>Scratch</h3>
+        <p>Baue Spiele und Animationen mit bunten Blöcken – ganz ohne Tippen.</p>
+        <a href="https://scratch.mit.edu" target="_blank" rel="noopener noreferrer">scratch.mit.edu</a>
+      </div>
+
+      <div class="card">
+        <span class="tag beginner">Ab 8 Jahren</span>
+        <h3>TurboWarp</h3>
+        <p>Scratch ohne Ablenkung – schnell, offlinefähig, perfekt zum konzentrierten Üben.</p>
+        <a href="https://turbowarp.org/editor" target="_blank" rel="noopener noreferrer">turbowarp.org/editor</a>
+      </div>
+
+      <div class="card">
+        <span class="tag beginner">Ab 6 Jahren</span>
+        <h3>Code.org</h3>
+        <p>Strukturierte Kurse auf Deutsch – von Minecraft bis Star Wars.</p>
+        <a href="https://code.org" target="_blank" rel="noopener noreferrer">code.org</a>
+      </div>
+
+      <div class="card">
+        <span class="tag intermediate">Ab 10 Jahren</span>
+        <h3>Khan Academy</h3>
+        <p>Kostenlose Kurse zu JavaScript, HTML/CSS und mehr (teilweise auf Deutsch).</p>
+        <a href="https://de.khanacademy.org/computing/computer-programming" target="_blank" rel="noopener noreferrer">khanacademy.org</a>
+      </div>
+
+      <div class="card">
+        <span class="tag intermediate">Ab 12 Jahren</span>
+        <h3>p5.js Editor</h3>
+        <p>Kreatives Programmieren mit JavaScript: Farben, Bewegung, Effekte, Glitzer.</p>
+        <a href="https://editor.p5js.org" target="_blank" rel="noopener noreferrer">editor.p5js.org</a>
+      </div>
+
+      <div class="card">
+        <span class="tag intermediate">Ab 10 Jahren</span>
+        <h3>Thonny (Python)</h3>
+        <p>Einfacher Python-Editor für Einsteiger – perfekt für erste Textprogramme.</p>
+        <a href="https://thonny.org" target="_blank" rel="noopener noreferrer">thonny.org</a>
+      </div>
+
+      <div class="card">
+        <span class="tag intermediate">Ab 12 Jahren</span>
+        <h3>Codewars</h3>
+        <p>Kleine Programmier-Rätsel mit echtem Code (JavaScript, Python). Erste Level ohne Account.</p>
+        <a href="https://www.codewars.com" target="_blank" rel="noopener noreferrer">codewars.com</a>
+      </div>
+
+      <div class="card">
+        <span class="tag intermediate">Ab 12 Jahren</span>
+        <h3>Codecademy</h3>
+        <p>Interaktive Kurse zu JavaScript, Python & mehr (meist auf Englisch).</p>
+        <a href="https://www.codecademy.com" target="_blank" rel="noopener noreferrer">codecademy.com</a>
+      </div>
+
+      <div class="card">
+        <span class="tag advanced">Ab 14 Jahren</span>
+        <h3>Unity</h3>
+        <p>Professionelle Engine für 2D- und 3D-Spiele (für Fortgeschrittene).</p>
+        <a href="https://unity.com" target="_blank" rel="noopener noreferrer">unity.com</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span role="img" aria-label="Videospiel-Controller">🎮</span> Minecraft & Programmieren</h2>
+    <div class="card">
+      <p>Minecraft eignet sich hervorragend, um Programmieren spielerisch zu lernen:</p>
+      <ul>
+        <li><strong>Redstone & Logik</strong> – Schaltkreise bauen und verstehen</li>
+        <li><strong>Befehle & Automatisierung</strong> – Mit Commands die Welt steuern</li>
+        <li><strong>MakeCode for Minecraft</strong> – Programmiere mit Blöcken oder JavaScript</li>
+        <li><strong>Minecraft Education Edition</strong> – Spezielle Lern-Version mit Programmier-Lektionen</li>
+      </ul>
+      <p><strong>Hilfreiche Links:</strong></p>
+      <ul>
+        <li><a href="https://education.minecraft.net/de-de/resources/computer-science-subject-kit" target="_blank" rel="noopener noreferrer">Minecraft Education – Informatik-Lektionen</a></li>
+        <li><a href="https://minecraft.makecode.com" target="_blank" rel="noopener noreferrer">MakeCode for Minecraft</a> (funktioniert mit Java & Bedrock Edition)</li>
+        <li>YouTube: Suche nach <em>„Minecraft programmieren lernen"</em> oder <em>„Minecraft Redstone Tutorial"</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span role="img" aria-label="Häkchen">✅</span> So bleibst du am Ball – 5 Tipps</h2>
+    <div class="grid">
+      <div class="card"><strong>1. Klein anfangen</strong><br>20–30 Minuten reichen völlig aus.</div>
+      <div class="card"><strong>2. Ein Projekt zur Zeit</strong><br>Fokus bringt Erfolg.</div>
+      <div class="card"><strong>3. Ändern, testen, wiederholen</strong><br>Kleine Schritte, oft ausprobieren.</div>
+      <div class="card"><strong>4. Schreib es auf</strong><br>Idee → Liste → Umsetzung.</div>
+      <div class="card"><strong>5. Hol dir Hilfe</strong><br>Niemand lernt allein.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span role="img" aria-label="Fragezeichen">❓</span> Wo findest du Hilfe?</h2>
+    <div class="card">
+      <p>Niemand lernt Programmieren allein! Hier findest du Unterstützung:</p>
+      <ul>
+        <li><strong>YouTube-Kanäle (Deutsch):</strong>
+          <ul>
+            <li><a href="https://www.youtube.com/@TheMorpheusTutorials" target="_blank" rel="noopener noreferrer">The Morpheus Tutorials</a> – Programmieren für Einsteiger</li>
+            <li><a href="https://www.youtube.com/@SimplyCoding" target="_blank" rel="noopener noreferrer">Simply Coding</a> – Python, JavaScript & mehr</li>
+          </ul>
+        </li>
+        <li><strong>Foren & Communities:</strong>
+          <ul>
+            <li><a href="https://scratch.mit.edu/discuss/" target="_blank" rel="noopener noreferrer">Scratch Forum</a> – Hilfe zu Scratch-Projekten</li>
+            <li><a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">Stack Overflow</a> – Fragen & Antworten zu allen Programmiersprachen (Englisch)</li>
+          </ul>
+        </li>
+        <li><strong>Discord-Server:</strong> Viele Programmier-Communities haben Discord-Server, wo du Fragen stellen kannst. Suche nach „Programmieren lernen Discord" oder „Scratch Discord".</li>
+        <li><strong>Eltern & Freunde:</strong> Zeig ihnen, was du machst – oft hilft es schon, laut zu erklären, wo du feststeckst!</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span role="img" aria-label="Puzzle-Teil">🧩</span> Hardware-Ideen</h2>
+    <div class="card">
+      <ul>
+        <li><strong>micro:bit</strong> – Einfacher Einstieg in Programmieren & Elektronik (ab 8 Jahren)</li>
+        <li><strong>Ozobot / Sphero Mini</strong> – Kleine programmierbare Roboter (ab 6 Jahren)</li>
+        <li><strong>Raspberry Pi</strong> – Ein kleiner, vollwertiger Computer zum Basteln (ab 10 Jahren, perfekt als Wunsch)</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Programmieren heißt: neugierig bleiben, ausprobieren, dranbleiben. <span role="img" aria-label="Blaues Herz">💙</span></p>
+</footer>
+
+</body>
+</html>
